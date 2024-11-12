@@ -5,3 +5,26 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+  background-image: url("../img/Colegio.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Estilos adicionales */
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+}
+.modal-img {
+  width: 100%;
+}
+.btn-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.nav-link {
+  color: #fff !important;
+}
