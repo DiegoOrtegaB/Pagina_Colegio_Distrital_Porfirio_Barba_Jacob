@@ -6,15 +6,15 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/*Propiedades del fondo*/
 body {
-	background-image: url("../img/Colegio.jpg");
+	background-image: url("../img/Colegio_pbj_4.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	color: #fff;
 }
-/*Color de fondo / relleno de contenidos*/
+/*relleno de contenidos*/
 .color_fondo{
-	background-color: rgba(75,75,75,0.20);
 	padding: 30px 10%;
 }
 /* Estilos adicionales */
@@ -51,10 +51,45 @@ body {
 	font-family: "Montserrat", serif;
 	border: none;
 	transition: 0.4s all ease-in-out;
+	cursor: pointer;
 }
 .container.py-5 .btn-center .btn.btn-primary:hover{
 	color: #0d6efd;
 	background-color: #ffffff;
 	transform: scale(0.98);
+}
+/*Nav - bar - fuente de texto*/
+.container-fluid #navbarNavDropdown .navbar-nav{
+	font-family: "Montserrat", serif;
+}
+/*Caracteristicas del Nav-Bar*/
+.color_fondo .navbar.navbar-expand-lg.bg-primary{
+	margin-top: 35px;
+	margin-bottom: 35px;
+	border-radius: 25px;
+}
+/*Alieacion al centro de los elementos del Nav-bar*/
+.navbar.navbar-expand-lg.bg-primary .container-fluid #navbarNavDropdown{
+	justify-content: center;
+	padding: 5px 20%;
+}
+/*Tamaño de los contenidos del Nav-bar*/
+.container-fluid #navbarNavDropdown .navbar-nav{
+	font-size: 18px;
+}
+/*Color del bondo de la caja de contenidos*/
+.color_fondo .container_fluid_contenidos{
+	border-radius: 25px;
+	padding: 48px 48px;
+	background-color: rgba(13,110,253,0.20);
+	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
+	box-shadow: 0px 0px 6px 2px #6699ff;
+}
+/*Caracteristicas del video*/
+.container_fluid_video .d-flex.justify-content-center video{
+	border-radius: 25px;
+	width: 100%;
+	height: auto;
+	border: 5px solid rgba(255,255,255,0.60);
 }
 

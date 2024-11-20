@@ -47,17 +47,31 @@
 		</div>
 
 		<!-- Nav Bar -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
+		<nav class="navbar navbar-expand-lg bg-primary sticky-top">
 			<div class="container-fluid">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav">
-						<li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Institucional</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">STEM</a></li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="servicios.html">Servicios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="institucional.html">Institucional</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="stem.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Stem
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="astronomia.html">Astronomía</a></li>
+								<li><a class="dropdown-item" href="robotica.html">Robótica</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -67,8 +81,8 @@
 		<div class="container_fluid_contenidos">
 			<!-- Sección de Video -->
 			<div class="container_fluid_video">
-				<div class="d-flex justify-content-center mt-4">
-					<video controls style="max-width: 70%; height: auto;">
+				<div class="d-flex justify-content-center">
+					<video controls>
 						<source src="https://video.wixstatic.com/video/08483e_4fdbefeee5a74f81ab7808c8310b155c/1080p/mp4/file.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -76,6 +90,7 @@
 			<!-- Cierra Sección de Video -->
 		</div>
 		<!-- Cierra Sección de contenidos -->
+		
 	</div>
 	<!--Color de fondo / complemento de la imagen-->
 	

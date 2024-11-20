@@ -1,41 +1,62 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* CSS Document */
-
-.container h1 {
-  color: #4a90e2;
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 20px;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-
+/*Propiedades del fondo*/
+body {
+	background-image: url("../img/Colegio_pbj_3.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+}
+/*relleno de contenidos*/
+.color_fondo{
+	padding: 30px 10%;
+}
+/*Propiedades del titulo*/
+.container h1 {
+	color: #FFFFFF;
+	font-size: 3rem;
+	text-align: center;
+	text-shadow: 0px 0px 15px #1665a7;
+	margin-bottom: 40px;
+	font-family: "Montserrat", serif;
+}
 /* Estilos para la galería */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
 }
-
 .gallery-item {
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease;
+	position: relative;
+	overflow: hidden;
+	transition: transform 0.3s ease;
 }
-
 .gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+	cursor: pointer;
 }
-
 .gallery-item:hover img {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
-
 /* Efecto modal */
 .modal-img {
-  width: 100%;
+	width: 100%;
+}
+/*Color de fondo del contenedor*/
+.color_fondo .container{
+	border-radius: 25px;
+	padding: 48px 48px;
+	background-color: rgba(13,110,253,0.20);
+	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
+	box-shadow: 0px 0px 6px 2px #6699ff;
 }
