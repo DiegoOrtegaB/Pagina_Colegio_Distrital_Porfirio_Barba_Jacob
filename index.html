@@ -25,26 +25,28 @@
 </head>
 
 <body>
-	<div class="container py-5">
-		<!-- Carrusel de Imágenes Doble -->
-		<div id="carouselAnuncios" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-inner" id="carouselImagesContainer">
-				<!-- Slides generados dinámicamente en JavaScript -->
+	<!--Color de fondo / complemento de la imagen-->
+	<div class="color_fondo">
+		<div class="container py-5">
+			<!-- Carrusel de Imágenes Doble -->
+			<div id="carouselAnuncios" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner" id="carouselImagesContainer">
+					<!-- Slides generados dinámicamente en JavaScript -->
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselAnuncios" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselAnuncios" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</button>
 			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselAnuncios" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselAnuncios" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			</button>
+			<!-- Botón "Ver todos los anuncios" -->
+			<div class="btn-center">
+				<a class="btn btn-primary" href="anuncios.html">Ver todos los anuncios</a>
+			</div>
 		</div>
 
-		<!-- Botón "Ver todos los anuncios" -->
-		<div class="btn-center">
-			<a class="btn btn-danger" href="anuncios.html">Ver todos los anuncios</a>
-		</div>
-
-		<!-- Menú de Navegación -->
+		<!-- Nav Bar -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
 			<div class="container-fluid">
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,15 +63,23 @@
 			</div>
 		</nav>
 
-		<!-- Sección de Video -->
-		<div class="d-flex justify-content-center mt-4">
-			<video controls style="max-width: 70%; height: auto;">
-				<source src="https://video.wixstatic.com/video/08483e_4fdbefeee5a74f81ab7808c8310b155c/1080p/mp4/file.mp4" type="video/mp4">
-			</video>
+		<!-- Sección de contenidos -->
+		<div class="container_fluid_contenidos">
+			<!-- Sección de Video -->
+			<div class="container_fluid_video">
+				<div class="d-flex justify-content-center mt-4">
+					<video controls style="max-width: 70%; height: auto;">
+						<source src="https://video.wixstatic.com/video/08483e_4fdbefeee5a74f81ab7808c8310b155c/1080p/mp4/file.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<!-- Cierra Sección de Video -->
 		</div>
+		<!-- Cierra Sección de contenidos -->
 	</div>
-
-  <!-- Modal para Visualización Ampliada de Imagen -->
+	<!--Color de fondo / complemento de la imagen-->
+	
+  	<!-- Modal para Visualización Ampliada de Imagen -->
 	<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content bg-dark text-white">

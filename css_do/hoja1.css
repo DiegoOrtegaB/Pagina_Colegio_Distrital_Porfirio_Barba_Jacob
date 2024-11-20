@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* CSS Document */
 *{
 	margin: 0;
@@ -6,25 +7,54 @@
 	box-sizing: border-box;
 }
 body {
-  background-image: url("../img/Colegio.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  color: #fff;
+	background-image: url("../img/Colegio.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
 }
-
+/*Color de fondo / relleno de contenidos*/
+.color_fondo{
+	background-color: rgba(75,75,75,0.20);
+	padding: 30px 10%;
+}
 /* Estilos adicionales */
 .carousel-inner img {
-  height: 400px;
-  object-fit: cover;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 20px;
 }
 .modal-img {
-  width: 100%;
+	width: 100%;
 }
 .btn-center {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
 }
 .nav-link {
-  color: #fff !important;
+	color: #fff !important;
 }
+/*Fondo del carrusel*/
+.color_fondo .container.py-5{
+	border-radius: 25px;
+	padding: 0px 48px;
+	background-color: rgba(13,110,253,0.20);
+	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
+	box-shadow: 0px 0px 6px 2px #6699ff;
+}
+/*Modifica el boton ver los anuncios*/
+.container.py-5 .btn-center .btn.btn-primary{
+	width: 100%;
+	padding: 15px 0px;
+	border-radius: 25px;
+	font-size: 18px;
+	font-family: "Montserrat", serif;
+	border: none;
+	transition: 0.4s all ease-in-out;
+}
+.container.py-5 .btn-center .btn.btn-primary:hover{
+	color: #0d6efd;
+	background-color: #ffffff;
+	transform: scale(0.98);
+}
+
