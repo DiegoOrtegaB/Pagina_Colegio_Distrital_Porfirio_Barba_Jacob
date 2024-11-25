@@ -17,24 +17,26 @@ body {
 .color_fondo{
 	padding: 30px 10%;
 }
+
+
+
 /* Estilos adicionales */
 .carousel-inner img {
 	height: 400px;
 	object-fit: cover;
 	border-radius: 20px;
 }
+/*tmaño de imagen en el modal*/
 .modal-img {
 	width: 100%;
 }
+/*Centra el boton de anuncios*/
 .btn-center {
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;
 }
-.nav-link {
-	color: #fff !important;
-}
-/*Fondo del carrusel*/
+/*Color y Fondo del carrusel*/
 .color_fondo .container.py-5{
 	border-radius: 25px;
 	padding: 0px 48px;
@@ -58,6 +60,9 @@ body {
 	background-color: #ffffff;
 	transform: scale(0.98);
 }
+
+
+
 /*Nav - bar - fuente de texto*/
 .container-fluid #navbarNavDropdown .navbar-nav{
 	font-family: "Montserrat", serif;
@@ -76,7 +81,41 @@ body {
 /*Tamaño de los contenidos del Nav-bar*/
 .container-fluid #navbarNavDropdown .navbar-nav{
 	font-size: 18px;
+	font-weight: 500;
 }
+/*Color y propiedades del link del Nav bar*/
+.nav-link {
+	color: #fff !important;
+}
+.nav-link:hover {
+	text-decoration: overline;
+	transition: 0.4s all ease-in-out;
+	color: #082538 !important;
+}
+/*Color y propiedades del desplegable*/
+.navbar-nav .nav-item.dropdown .dropdown-menu{
+	background-color: #0d6efd;
+}
+/*Color y propiedades del link del desplegable*/
+.dropdown-menu li .dropdown-item{
+	color: white;
+	font-size: 15px;
+	transition: 0.4s all ease-in-out;
+	font-weight: 500;
+}
+.dropdown-menu li .dropdown-item:hover{
+	color: #082538;
+	text-decoration: overline;
+	background-color: #0d6efd;
+}
+/*Indicador de pagina /IMPORTANTE PARA CADA PAGINA/*/
+.nav-link.active{
+	text-decoration: overline;
+	color: #082538 !important;
+}
+
+
+
 /*Color del bondo de la caja de contenidos*/
 .color_fondo .container_fluid_contenidos{
 	border-radius: 25px;
@@ -92,4 +131,87 @@ body {
 	height: auto;
 	border: 5px solid rgba(255,255,255,0.60);
 }
+/*Caracteristicas del resumen*/
+.summary{
+	padding: 22px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	background-color: #1665a7;
+	border-radius: 25px;
+}
+/*Carateristicas del texto de resumen*/
+.summary p{
+	line-height: inherit;
+	font-family: "Montserrat", serif;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	margin: 0;
+}
+/*Tarjetas simples*/
+.tarjetas_individuales{
+	padding: 15px;
+	margin-bottom: 35px;
+}
+.tarjetas_individuales img{
+	width: 80%;
+	height: auto;
+	display: block;
+	margin: auto;
+	transition: 0.3s all ease-in-out;
+}
+.tarjetas_individuales img:hover{
+	transform: scale(1.1);
+}
+
+
+
+/*Color y propiedades de la caja del footer*/
+.color_fondo .container-fluid-pie{
+	padding: 15px;
+	margin-top: 35px;
+	border-radius: 25px;
+	background-color: rgba(13,110,253,0.20);
+	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
+	box-shadow: 0px 0px 6px 2px #6699ff;
+}
+/*Propiedades y color del texto del footer*/
+.color_fondo .container-fluid-pie .col-12{
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 5px #082538;
+	font-family: "Montserrat", serif;
+}
+
+
+
+/*Scroll hacia arriba*/
+.scroll{
+	font-size: 16px;
+	padding: 8px;
+	background-color: #0d6efd;
+	position: fixed;
+	right: 60px;
+	bottom: 10.5%;
+	z-index: 98;
+	border-radius: 20px;
+	transition: 0.5s all ease-in-out;
+}
+.scroll:hover{
+	-webkit-box-shadow: 0px 0px 10px 0px #1665a7;
+	box-shadow: 0px 0px 10px 0px #1665a7;
+	background-color: white;
+}
+/*Icono y link del boton de scroll*/
+.scroll i{
+	color: white;
+	transition: 0.5s all ease-in-out;
+}
+.scroll:hover i{
+	color: #1665a7;
+}
+.scroll:hover a{
+	text-shadow: 0px 0px 10px #1665a7;
+}
+
 

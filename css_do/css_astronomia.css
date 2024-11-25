@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*Propiedades del fondo*/
+body {
+	background-image: url("../img/Colegio_pbj_0.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+}
+/*relleno de contenidos*/
+.color_fondo{
+	padding: 30px 10%;
+}
+
+
+
+/*Nav - bar - fuente de texto*/
+.container-fluid #navbarNavDropdown .navbar-nav{
+	font-family: "Montserrat", serif;
+}
+/*Caracteristicas del Nav-Bar*/
+.color_fondo .navbar.navbar-expand-lg.bg-primary{
+	margin-top: 35px;
+	margin-bottom: 35px;
+	border-radius: 25px;
+}
+/*Alieacion al centro de los elementos del Nav-bar*/
+.navbar.navbar-expand-lg.bg-primary .container-fluid #navbarNavDropdown{
+	justify-content: center;
+	padding: 5px 20%;
+}
+/*Tamaño de los contenidos del Nav-bar*/
+.container-fluid #navbarNavDropdown .navbar-nav{
+	font-size: 18px;
+	font-weight: 500;
+}
+/*Color y propiedades del link del Nav bar*/
+.nav-link {
+	color: #fff !important;
+}
+.nav-link:hover {
+	text-decoration: overline;
+	transition: 0.4s all ease-in-out;
+	color: #082538 !important;
+}
+/*Color y propiedades del desplegable*/
+.navbar-nav .nav-item.dropdown .dropdown-menu{
+	background-color: #0d6efd;
+}
+/*Color y propiedades del link del desplegable*/
+.dropdown-menu li .dropdown-item{
+	color: white;
+	font-size: 15px;
+	transition: 0.4s all ease-in-out;
+	font-weight: 500;
+}
+.dropdown-menu li .dropdown-item:hover{
+	color: #082538;
+	text-decoration: overline;
+	background-color: #0d6efd;
+}
+/*Indicador de pagina /IMPORTANTE PARA CADA PAGINA/*/
+.nav-link.active{
+	text-decoration: overline;
+	color: #082538 !important;
+}
+
+
+
+/*Contenidos de la interna stem-astronomia*/
+.container-fluid-contenido-astronomia{
+	border-radius: 25px;
+	padding: 48px 48px;
+	background-color: rgba(13,110,253,0.20);
+	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
+	box-shadow: 0px 0px 6px 2px #6699ff;
+}
+
+
+
+/*Color y propiedades de la caja del footer*/
+.color_fondo .container-fluid-pie{
+	padding: 15px;
+	margin-top: 35px;
+	border-radius: 25px;
+	background-color: rgba(13,110,253,0.20);
+	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
+	box-shadow: 0px 0px 6px 2px #6699ff;
+}
+/*Propiedades y color del texto del footer*/
+.color_fondo .container-fluid-pie .col-12{
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 5px #082538;
+	font-family: "Montserrat", serif;
+}
+
+

@@ -24,7 +24,7 @@
 	<!--Cierra bootstrap css-->
 </head>
 
-<body>
+<body> <!--Funcion del boton de scroll--> <div id="tope"></div> <!--Funcion del boton de scroll-->
 	<!--Color de fondo / complemento de la imagen-->
 	<div class="color_fondo">
 		<div class="container py-5">
@@ -55,7 +55,7 @@
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">Inicio</a>
+							<a class="nav-link active" href="index.html">Inicio</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="servicios.html">Servicios</a>
@@ -64,7 +64,7 @@
 							<a class="nav-link" href="institucional.html">Institucional</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="stem.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Stem
 							</a>
 							<ul class="dropdown-menu">
@@ -76,6 +76,7 @@
 				</div>
 			</div>
 		</nav>
+		<!--Cierra Nav Bar-->
 
 		<!-- Sección de contenidos -->
 		<div class="container_fluid_contenidos">
@@ -88,11 +89,48 @@
 				</div>
 			</div>
 			<!-- Cierra Sección de Video -->
+			
+			<!--Summary-->
+			<div class="summary">
+				<p>La IED Colegio Porfirio Barba Jacob interactúa con la familia y la sociedad en la formación académica y cultural de un ser humano Participativo, Reflexivo, Comprometido, Solidario, Innovador Y Respetuoso, a través de un currículo que incluye capacidades y actitudes ciudadanas, académicas y laborales; promoviendo convenios, alianzas y programas, que le permiten, al estudiante y egresado, comprender su contexto para vincular su proyecto de vida a la educación superior y/o al mundo productivo.</p>
+			</div>
+			<!--Cierra Summary-->
+			
+			<!--Tarjetas individuales-->
+			<div class="tarjetas_individuales">
+				<div class="row">
+					<div class="col-lg-4">
+						<a href="#"><img src="img/tarjeta_1.png" width="353" height="205" alt=""/></a> 
+					</div>
+					<div class="col-lg-4">
+						<a target="_blank" href="https://drive.google.com/drive/folders/1LcMr2mwI-W4rIaAIp8R1e_zdKCpyTsu9"><img src="img/tarjeta_2.png" width="353" height="205" alt=""/></a> 
+					</div>
+					<div class="col-lg-4">
+						<a href="#"><img src="img/tarjeta_3.png" width="353" height="205" alt=""/></a> 
+					</div>
+				</div>
+			</div>
+			<!--Cierra Tarjetas individuales-->
+			
+			<!--12 cartas-->
+			<div>
+				
+			</div>
+			<!--Cierra 12 cartas-->
+			
 		</div>
 		<!-- Cierra Sección de contenidos -->
 		
+		<!--FOOTER-->
+		<footer class="container-fluid-pie">
+			<div class="col-12">
+				<h4>INSTITUCION EDUCATIVA DISTRITAL PORFIRIO BARBA JACOB<br>CALLE 70A SUR N°81G-13 BOSA - PALESTINA</h4>
+			</div>
+		</footer>
+		<!--Cierra FOOTER-->
+		
 	</div>
-	<!--Color de fondo / complemento de la imagen-->
+	<!--Cierra Color de fondo / complemento de la imagen-->
 	
   	<!-- Modal para Visualización Ampliada de Imagen -->
 	<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
@@ -108,6 +146,12 @@
 			</div>
 		</div>
 	</div>
+	
+	<!--Boton de Scroll hacia arriba-->
+	<div class="scroll">
+		<a href="#tope"><i class="fa-solid fa-chevron-up"></i></a>
+	</div>
+	<!--Cierra Boton de Scroll hacia arriba-->
 
 	<!--Script Bootstrap-->
 	<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
