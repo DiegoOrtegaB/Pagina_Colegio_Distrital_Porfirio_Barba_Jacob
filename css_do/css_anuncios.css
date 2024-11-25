@@ -60,3 +60,37 @@ body {
 	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
 	box-shadow: 0px 0px 6px 2px #6699ff;
 }
+
+
+
+/* Botón fijo en la esquina superior izquierda */
+.btn-regreso {
+    position: fixed;
+    top: 10%;
+    left: 45px;
+    z-index: 1000;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Hover con animación de salto */
+.btn-regreso:hover {
+    transform: translateY(-5px); /* Salto */
+}
+
+/* Responsive: ajusta tamaño en pantallas pequeñas */
+@media (max-width: 576px) {
+    .btn-regreso {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
