@@ -81,6 +81,21 @@ body {
 	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
 	box-shadow: 0px 0px 6px 2px #6699ff;
 }
+/*Animacion botones*/
+@keyframes slide-left-to-right {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.animated-slide {
+    animation: slide-left-to-right 0.8s ease-out;
+    width: 80%;
+}
 
 
 
