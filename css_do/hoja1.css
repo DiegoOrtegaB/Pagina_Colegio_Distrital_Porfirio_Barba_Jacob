@@ -153,6 +153,7 @@ body {
 	padding: 15px;
 	margin-bottom: 35px;
 }
+/*Propiedades de las imagenes de las tarjetas*/
 .tarjetas_individuales img{
 	width: 80%;
 	height: auto;
@@ -162,6 +163,38 @@ body {
 }
 .tarjetas_individuales img:hover{
 	transform: scale(1.1);
+}
+/*Propiedades de la sección de 12 casas*/
+.doce_cartas .icono-casa {
+    font-size: 60px;
+    color: #ffffff;
+    transition: 0.3s all ease-in-out;
+}
+.doce_cartas .icono-casa:hover {
+    color: #C4D7FF;
+    transform: scale(0.9);
+	text-shadow: 4px 4px 6px #082538;
+}
+/*Propiedades de los titulares de las casas*/
+.doce_cartas h6 {
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.80);
+	margin-top: 10px;
+	font-size: 14px;
+}
+.imagen_2{
+	margin-top: 15px;
+	
+}
+.imagen_2 img{
+	background-color: rgba(255,255,255,0.49);
+	padding: 15px;
+	border-radius: 25px;
+	width: 40%;
+	height: auto;
+	display: block;
+	margin: auto;
 }
 
 
