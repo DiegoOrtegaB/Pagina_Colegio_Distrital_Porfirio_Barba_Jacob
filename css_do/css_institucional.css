@@ -81,9 +81,22 @@ body {
 	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
 	box-shadow: 0px 0px 6px 2px #6699ff;
 }
-/**/
+/*Color y propiedades de los botones*/
 .container-fluid-contenido-institucional .container.d-flex.flex-column.align-items-center.my-5 .btn.btn-primary.my-2.animated-slide{
-	
+	background-color: #1665a7;
+	padding: 20px;
+	border-radius: 25px;
+	font-size:16px;
+	font-family: "Montserrat", serif;
+	transition: 0.4s all ease-in-out;
+}
+.container-fluid-contenido-institucional .container.d-flex.flex-column.align-items-center.my-5 .btn.btn-primary.my-2.animated-slide:hover{
+	background-color: white;
+	color: #082538;
+}
+/*Color y propiedades de los iconos de los botones*/
+.container-fluid-contenido-institucional .container.d-flex.flex-column.align-items-center.my-5 .btn.btn-primary.my-2.animated-slide i{
+	margin-left: 10px;
 }
 /*Animacion botones*/
 @keyframes slide-left-to-right {
@@ -96,6 +109,7 @@ body {
         opacity: 1;
     }
 }
+/*Aniamcion de slide*/
 .animated-slide {
     animation: slide-left-to-right 0.8s ease-out;
     width: 80%;
