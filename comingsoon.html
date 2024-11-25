@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<meta name="Description" content="Pagina del Colegio Distrital Porfirio Barba Jacob, Escuela secundaria en Bogotá - Colombia.">
+	<title>Colegio Distrital | Porfirio Barba Jacob</title>
+
+	<!--Hoja1 CSS-->
+	<link rel="stylesheet" href="css_do/css_comingsoon.css">
+	<!--Cierra Hoja1 CSS-->
+
+	<!--FaviCon-->
+	<link rel="shortcut icon" href="img/favi.png">
+	<!--Cierra FaviCon-->
+
+	<!--FontAwesone-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--Cierra FontAwesone-->
+
+	<!--bootstrap css-->
+	<link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+	<!--Cierra bootstrap css-->
+</head>
+
+<body>
+    <div class="coming-soon-container">
+        <div class="overlay"></div>
+        <div class="text-center content">
+            <h1 class="display-4 text-uppercase">¡Estamos Trabajando!</h1>
+            <p class="lead mb-4">Pronto estará disponible el sitio web del Colegio Distrital Porfirio Barba Jacob.</p>
+            <div class="countdown d-flex justify-content-center gap-4">
+                <div class="time-unit text-center">
+                    <span class="display-6 fw-bold" id="days">00</span>
+                    <p>Días</p>
+                </div>
+                <div class="time-unit text-center">
+                    <span class="display-6 fw-bold" id="hours">00</span>
+                    <p>Horas</p>
+                </div>
+                <div class="time-unit text-center">
+                    <span class="display-6 fw-bold" id="minutes">00</span>
+                    <p>Minutos</p>
+                </div>
+                <div class="time-unit text-center">
+                    <span class="display-6 fw-bold" id="seconds">00</span>
+                    <p>Segundos</p>
+                </div>
+            </div>
+            <a href="index.html" class="btn btn-primary mt-4">
+                <i class="fas fa-home"></i> Volver a la página principal
+            </a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Countdown Script -->
+    <script>
+        // Configura la fecha de cuenta regresiva
+        const targetDate = new Date("2024-12-31T23:59:59").getTime();
+        const countdown = () => {
+            const now = new Date().getTime();
+            const timeLeft = targetDate - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+
+            if (timeLeft < 0) {
+                document.querySelector(".countdown").innerHTML = "¡El sitio ya está disponible!";
+            }
+        };
+
+        setInterval(countdown, 1000);
+    </script>
+</body>
+
+</html>

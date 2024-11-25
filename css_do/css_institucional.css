@@ -81,6 +81,10 @@ body {
 	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
 	box-shadow: 0px 0px 6px 2px #6699ff;
 }
+/**/
+.container-fluid-contenido-institucional .container.d-flex.flex-column.align-items-center.my-5 .btn.btn-primary.my-2.animated-slide{
+	
+}
 /*Animacion botones*/
 @keyframes slide-left-to-right {
     from {
