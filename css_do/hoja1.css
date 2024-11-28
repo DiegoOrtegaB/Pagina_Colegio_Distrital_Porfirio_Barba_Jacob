@@ -116,7 +116,7 @@ body {
 
 
 
-/*Color del bondo de la caja de contenidos*/
+/*Color del Fondo de la caja de contenidos*/
 .color_fondo .container_fluid_contenidos{
 	border-radius: 25px;
 	padding: 48px 48px;
@@ -245,6 +245,192 @@ body {
 }
 .scroll:hover a{
 	text-shadow: 0px 0px 10px #1665a7;
+}
+
+
+
+/* Ajustes para pantallas medianas y pequeñas */
+@media (max-width: 991px) {
+	/*Carrusel*/
+	
+	/*Nav-bar*/
+	.navbar-nav{
+    	text-align: center;
+    }
+	.navbar-nav .nav-item.dropdown .dropdown-menu{
+		background-color: #fff;
+		border-radius: 25px;
+	}
+	.dropdown-menu li .dropdown-item{
+		color: #082538;
+		text-align: center;
+	}
+	.dropdown-menu li .dropdown-item:hover{
+		background-color: #fff;
+	}
+    /* Video */
+    .container_fluid_video .d-flex.justify-content-center video{
+        border: none;
+        width: 100%;
+        height: auto;
+    }
+    /* Summary */
+    .summary{
+        padding: 18px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+    .summary p{
+        font-size: 14px;
+    }
+    /* Tarjetas individuales */
+	.tarjetas_individuales{
+		padding: 0;
+		margin: auto;
+	}
+    .tarjetas_individuales img{
+        width: 45%;
+        height: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+    }
+    /* 12 cartas */
+    .doce_cartas .icono-casa{
+        font-size: 50px;
+    }
+    .doce_cartas h6{
+        font-size: 13px;
+    }
+    /* Imagen de recuerdo */
+    .imagen_2 img{
+        width: 70%;
+        height: auto;
+    }
+    /* Footer */
+    .color_fondo .container-fluid-pie{
+        padding: 15px;
+    }
+	 .color_fondo .container-fluid-pie h4{
+		font-size: 18px;
+		margin: 0;
+    }
+	/*Scroll arriba*/
+	.scroll{
+		right: 30px;
+		font-size: 14px;
+	}
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+	/*relleno de contenidos*/
+	.color_fondo{
+		padding: 20px 5%;
+	}
+	/*Carrusel*/
+    .carousel-inner img {
+        height: 200px;
+        object-fit: contain;
+    }
+	.container.py-5 .btn-center .btn.btn-primary{
+		font-size: 15px;
+	}
+    /*Nav Bar*/
+    .navbar-nav{
+        text-align: center;
+    }
+	.color_fondo .navbar.navbar-expand-lg.bg-primary{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	.container-fluid #navbarNavDropdown .navbar-nav{
+		font-size: 15px;
+	}
+    /* Video */
+    .container_fluid_video .d-flex.justify-content-center video{
+        width: 100%;
+        height: auto;
+    }
+ 	/* Sumary */
+	.summary{
+		padding: 17px;
+	}
+	.summary p{
+		font-size: 14px;
+	}
+    /* Tarjetas individuales */
+    .tarjetas_individuales img{
+        width: 40%;
+        height: auto;
+    }
+    /* 12 cartas */
+    .doce_cartas .icono-casa{
+        font-size: 45px;
+    }
+    .doce_cartas h6{
+        font-size: 12px;
+    }
+    /* Footer */
+    .color_fondo .container-fluid-pie{
+        padding: 17px;
+    }
+	.color_fondo .container-fluid-pie h4{
+		font-size: 16px;
+    }
+	/*Scroll arriba*/
+	.scroll{
+		right: 21.5px;
+		font-size: 14px;
+	}
+}
+
+/*Celulares*/
+@media (max-width: 576px){
+	/*relleno de contenidos*/
+	.color_fondo{
+		padding: 20px 2.5%;
+	}
+	/*Color y Fondo del carrusel*/
+	.color_fondo .container.py-5{
+		padding: 22px !important;
+	}
+	/*Carrusel*/
+	.container.py-5 .btn-center .btn.btn-primary{
+		font-size: 14px;
+	}
+	/*Nav-Bar*/
+	.container-fluid #navbarNavDropdown .navbar-nav{
+		font-size: 14px;
+	}
+	.dropdown-menu li .dropdown-item{
+		font-size: 14px;
+	}
+	/*Color del Fondo de la caja de contenidos*/
+	.color_fondo .container_fluid_contenidos{
+		padding: 22px;
+	}
+	/*Summary*/
+	.summary{
+		padding: 18px;
+	}
+	/* 12 cartas */
+	.doce_cartas .icono-casa{
+        font-size: 55px;
+    }
+    .doce_cartas h6{
+        font-size: 13px;
+    }
+	/* Footer */
+    .color_fondo .container-fluid-pie{
+        padding: 16px;
+    }
+	.color_fondo .container-fluid-pie h4{
+		font-size: 14px;
+    }
+	/*Scroll arriba*/
+	.scroll{
+		display: none;
+	}
 }
 
 
