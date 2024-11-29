@@ -81,6 +81,97 @@ body {
 	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
 	box-shadow: 0px 0px 6px 2px #6699ff;
 }
+/*Titular de la pagina interna*/
+.titular{
+	color: white;
+	text-align: center;
+	text-shadow: 0px 0px 15px #0677c4;
+	background-color: rgba(1,15,25,0.60);
+	padding: 10px;
+	margin: auto;
+	width: 100%;
+	border-radius: 25px;
+}
+.titular h1{
+	font-size: 30px;
+	font-weight: 600;
+	margin: auto;
+}
+/*Titular del video*/
+.container-fluid-contenido-astronomia .container.mt-5 .text-center.mb-4{
+	color: white;
+	font-family: "Montserrat", serif;
+	background-color: rgba(1,15,25,0.60);
+	padding: 15px;
+	height: auto;
+	width: 50%;
+	margin: auto;
+	border-radius: 25px;
+	text-shadow: 0px 0px 15px #0677c4;
+	font-size: 20px;
+	font-weight: 500;
+}
+/*Carrusel - Videos*/
+.carousel video {
+    height: auto;
+    border-radius: 25px;
+}
+/*Ajuste de posición de controladores*/
+.container.mt-5 #videoCarousel .carousel-control-prev {
+	width: 10%;
+	height: 90%;
+}
+.container.mt-5 #videoCarousel .carousel-control-next {
+	width: 10%;
+	height: 90%;
+}
+/*Texto importante de los videos*/
+.carousel-caption {
+	font-family: "Montserrat", serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 10px;
+	margin-bottom: 20px;
+}
+/*Espaciado entre los textos*/
+.carousel-inner .carousel-item .carousel-caption.d-none.d-md-block h5{
+	margin: 0px 0px 5px 0px;
+}
+.carousel-inner .carousel-item .carousel-caption.d-none.d-md-block p{
+	margin: 5px 0px 0px 0px;
+}
+/*Caja padre del video*/
+.color_fondo .container-fluid-contenido-astronomia .container.mt-5 {
+	margin-bottom: 3rem;
+}
+/*apartado de mensaje importante / Reunion*/
+.mensaje_importante{
+	background-color: rgba(0, 0, 0, 0.5);
+	font-family: "Montserrat", serif;
+	text-align: center;
+	font-weight: 600;
+	padding: 16px;
+	margin: auto;
+	height: auto;
+	width: 52%;
+	border-radius: 25px;
+}
+/*Propiedades del parrafo*/
+.mensaje_importante p{
+	text-shadow: 0px 0px 15px #0677c4;
+	color: white;
+	margin: auto;
+	transition: 0.3s all ease-in-out;
+	font-size: 24px;
+}
+/*propiedades del link*/
+.mensaje_importante a{
+	color: white;
+}
+/*Animación al pasar el cursor*/
+.mensaje_importante:hover p{
+	transform: scale(1.05);
+}
 
 
 
