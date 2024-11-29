@@ -158,3 +158,84 @@ iframe {
 }
 
 
+
+/* Ajustes para pantallas medianas y pequeñas */
+@media (max-width: 991px) {	
+	/*Nav-bar*/
+	.navbar-nav{
+    	text-align: center;
+    }
+	.navbar-nav .nav-item.dropdown .dropdown-menu{
+		background-color: #fff;
+		border-radius: 25px;
+	}
+	.dropdown-menu li .dropdown-item{
+		color: #082538;
+		text-align: center;
+	}
+	.dropdown-menu li .dropdown-item:hover{
+		background-color: #fff;
+	}
+    /* Video */
+    .container_fluid_video .d-flex.justify-content-center video{
+        border: none;
+        width: 100%;
+        height: auto;
+    }
+    /* Footer */
+    .color_fondo .container-fluid-pie{
+        padding: 15px;
+    }
+	 .color_fondo .container-fluid-pie h4{
+		font-size: 18px;
+		margin: 0;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+	/*relleno de contenidos*/
+	.color_fondo{
+		padding: 20px 5%;
+	}
+    /*Nav Bar*/
+    .navbar-nav{
+        text-align: center;
+    }
+	.color_fondo .navbar.navbar-expand-lg.bg-primary{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	.container-fluid #navbarNavDropdown .navbar-nav{
+		font-size: 15px;
+	}
+    /* Footer */
+    .color_fondo .container-fluid-pie{
+        padding: 17px;
+    }
+	.color_fondo .container-fluid-pie h4{
+		font-size: 16px;
+    }
+}
+
+/*Celulares*/
+@media (max-width: 576px){
+	/*relleno de contenidos*/
+	.color_fondo{
+		padding: 20px 2.5%;
+	}
+	/*Nav-Bar*/
+	.container-fluid #navbarNavDropdown .navbar-nav{
+		font-size: 14px;
+	}
+	.dropdown-menu li .dropdown-item{
+		font-size: 14px;
+	}
+	/* Footer */
+    .color_fondo .container-fluid-pie{
+        padding: 16px;
+    }
+	.color_fondo .container-fluid-pie h4{
+		font-size: 14px;
+    }
+}
