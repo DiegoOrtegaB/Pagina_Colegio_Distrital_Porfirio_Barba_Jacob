@@ -1,7 +1,436 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* CSS Document */
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+/*Propiedades del fondo*/
+body {
+	background-image: url("../img/Colegio_pbj_4.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+}
+/*relleno de contenidos*/
+.color_fondo{
+	padding: 30px 10%;
+}
+
+
+
+/* Estilos adicionales */
+.carousel-inner img {
+	height: 400px;
+	object-fit: cover;
+	border-radius: 20px;
+}
+/*tmaño de imagen en el modal*/
+.modal-img {
+	width: 100%;
+}
+/*Centra el boton de anuncios*/
+.btn-center {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+/*Color y Fondo del carrusel*/
+.color_fondo .container.py-5{
+	border-radius: 25px;
+	padding: 0px 48px;
+	background-color: rgba(13,110,253,0.20);
+	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
+	box-shadow: 0px 0px 6px 2px #6699ff;
+}
+/*Modifica el boton ver los anuncios*/
+.container.py-5 .btn-center .btn.btn-primary{
+	width: 100%;
+	padding: 15px 0px;
+	border-radius: 25px;
+	font-size: 18px;
+	font-family: "Montserrat", serif;
+	border: none;
+	transition: 0.4s all ease-in-out;
+	cursor: pointer;
+}
+.container.py-5 .btn-center .btn.btn-primary:hover{
+	color: #0d6efd;
+	background-color: #ffffff;
+	transform: scale(0.98);
+}
+
+
+
+/*Nav - bar - fuente de texto*/
+.container-fluid #navbarNavDropdown .navbar-nav{
+	font-family: "Montserrat", serif;
+}
+/*Caracteristicas del Nav-Bar*/
+.color_fondo .navbar.navbar-expand-lg.bg-primary{
+	margin-top: 35px;
+	margin-bottom: 35px;
+	border-radius: 25px;
+}
+/*Alieacion al centro de los elementos del Nav-bar*/
+.navbar.navbar-expand-lg.bg-primary .container-fluid #navbarNavDropdown{
+	justify-content: center;
+	padding: 5px 20%;
+}
+/*Tamaño de los contenidos del Nav-bar*/
+.container-fluid #navbarNavDropdown .navbar-nav{
+	font-size: 18px;
+	font-weight: 500;
+}
+/*Color y propiedades del link del Nav bar*/
+.nav-link {
+	color: #fff !important;
+}
+.nav-link:hover {
+	text-decoration: overline;
+	transition: 0.4s all ease-in-out;
+	color: #082538 !important;
+}
+/*Color y propiedades del desplegable*/
+.navbar-nav .nav-item.dropdown .dropdown-menu{
+	background-color: #0d6efd;
+}
+/*Color y propiedades del link del desplegable*/
+.dropdown-menu li .dropdown-item{
+	color: white;
+	font-size: 15px;
+	transition: 0.4s all ease-in-out;
+	font-weight: 500;
+}
+.dropdown-menu li .dropdown-item:hover{
+	color: #082538;
+	text-decoration: overline;
+	background-color: #0d6efd;
+}
+/*Indicador de pagina /IMPORTANTE PARA CADA PAGINA/*/
+.nav-link.active{
+	text-decoration: overline;
+	color: #082538 !important;
+}
+
+
+
+/*Color del Fondo de la caja de contenidos*/
+.color_fondo .container_fluid_contenidos{
+	border-radius: 25px;
+	padding: 48px 48px;
+	background-color: rgba(13,110,253,0.20);
+	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
+	box-shadow: 0px 0px 6px 2px #6699ff;
+}
+/*Caracteristicas del video*/
+.container_fluid_video .d-flex.justify-content-center video{
+	border-radius: 25px;
+	width: 100%;
+	height: auto;
+	border: 5px solid rgba(255,255,255,0.60);
+}
+/*Caracteristicas del resumen*/
+.summary{
+	padding: 22px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	background-color: #1665a7;
+	border-radius: 25px;
+}
+/*Carateristicas del texto de resumen*/
+.summary p{
+	line-height: inherit;
+	font-family: "Montserrat", serif;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	margin: 0;
+}
+/*Tarjetas simples*/
+.tarjetas_individuales{
+	padding: 15px;
+	margin-bottom: 35px;
+}
+/*Propiedades de las imagenes de las tarjetas*/
+.tarjetas_individuales img{
+	width: 80%;
+	height: auto;
+	display: block;
+	margin: auto;
+	transition: 0.3s all ease-in-out;
+}
+.tarjetas_individuales img:hover{
+	transform: scale(1.1);
+}
+/*Propiedades de la sección de 12 casas*/
+.doce_cartas .icono-casa {
+    font-size: 60px;
+    color: #ffffff;
+    transition: 0.3s all ease-in-out;
+}
+.doce_cartas .icono-casa:hover {
+    color: #C4D7FF;
+    transform: scale(0.9);
+	text-shadow: 4px 4px 6px #082538;
+}
+/*Propiedades de los titulares de las casas*/
+.doce_cartas h6 {
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.80);
+	margin-top: 10px;
+	font-size: 14px;
+}
+.imagen_2{
+	margin-top: 15px;
+	
+}
+.imagen_2 img{
+	background-color: rgba(255,255,255,0.49);
+	padding: 15px;
+	border-radius: 25px;
+	width: 40%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+
+
+/*Color y propiedades de la caja del footer*/
+.color_fondo .container-fluid-pie{
+	padding: 15px;
+	margin-top: 35px;
+	border-radius: 25px;
+	background-color: rgba(13,110,253,0.20);
+	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
+	box-shadow: 0px 0px 6px 2px #6699ff;
+}
+/*Propiedades y color del texto del footer*/
+.color_fondo .container-fluid-pie .col-12{
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 5px #082538;
+	font-family: "Montserrat", serif;
+}
+
+
+
+/*Scroll hacia arriba*/
+.scroll{
+	font-size: 16px;
+	padding: 8px;
+	background-color: #0d6efd;
+	position: fixed;
+	right: 60px;
+	bottom: 10.5%;
+	z-index: 98;
+	border-radius: 20px;
+	transition: 0.5s all ease-in-out;
+}
+.scroll:hover{
+	-webkit-box-shadow: 0px 0px 10px 0px #1665a7;
+	box-shadow: 0px 0px 10px 0px #1665a7;
+	background-color: white;
+}
+/*Icono y link del boton de scroll*/
+.scroll i{
+	color: white;
+	transition: 0.5s all ease-in-out;
+}
+.scroll:hover i{
+	color: #1665a7;
+}
+.scroll:hover a{
+	text-shadow: 0px 0px 10px #1665a7;
+}
+
+
+
+/* Ajustes para pantallas medianas y pequeñas */
+@media (max-width: 991px) {
+	/*Carrusel*/
+	
+	/*Nav-bar*/
+	.navbar-nav{
+    	text-align: center;
+    }
+	.navbar-nav .nav-item.dropdown .dropdown-menu{
+		background-color: #fff;
+		border-radius: 25px;
+	}
+	.dropdown-menu li .dropdown-item{
+		color: #082538;
+		text-align: center;
+	}
+	.dropdown-menu li .dropdown-item:hover{
+		background-color: #fff;
+	}
+    /* Video */
+    .container_fluid_video .d-flex.justify-content-center video{
+        border: none;
+        width: 100%;
+        height: auto;
+    }
+    /* Summary */
+    .summary{
+        padding: 18px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+    .summary p{
+        font-size: 14px;
+    }
+    /* Tarjetas individuales */
+	.tarjetas_individuales{
+		padding: 0;
+		margin: auto;
+	}
+    .tarjetas_individuales img{
+        width: 45%;
+        height: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+    }
+    /* 12 cartas */
+    .doce_cartas .icono-casa{
+        font-size: 50px;
+    }
+    .doce_cartas h6{
+        font-size: 13px;
+    }
+    /* Imagen de recuerdo */
+    .imagen_2 img{
+        width: 70%;
+        height: auto;
+    }
+    /* Footer */
+    .color_fondo .container-fluid-pie{
+        padding: 15px;
+    }
+	 .color_fondo .container-fluid-pie h4{
+		font-size: 18px;
+		margin: 0;
+    }
+	/*Scroll arriba*/
+	.scroll{
+		right: 30px;
+		font-size: 14px;
+	}
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+	/*relleno de contenidos*/
+	.color_fondo{
+		padding: 20px 5%;
+	}
+	/*Carrusel*/
+    .carousel-inner img {
+        height: 200px;
+        object-fit: contain;
+    }
+	.container.py-5 .btn-center .btn.btn-primary{
+		font-size: 15px;
+	}
+    /*Nav Bar*/
+    .navbar-nav{
+        text-align: center;
+    }
+	.color_fondo .navbar.navbar-expand-lg.bg-primary{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	.container-fluid #navbarNavDropdown .navbar-nav{
+		font-size: 15px;
+	}
+    /* Video */
+    .container_fluid_video .d-flex.justify-content-center video{
+        width: 100%;
+        height: auto;
+    }
+ 	/* Sumary */
+	.summary{
+		padding: 17px;
+	}
+	.summary p{
+		font-size: 14px;
+	}
+    /* Tarjetas individuales */
+    .tarjetas_individuales img{
+        width: 40%;
+        height: auto;
+    }
+    /* 12 cartas */
+    .doce_cartas .icono-casa{
+        font-size: 45px;
+    }
+    .doce_cartas h6{
+        font-size: 12px;
+    }
+    /* Footer */
+    .color_fondo .container-fluid-pie{
+        padding: 17px;
+    }
+	.color_fondo .container-fluid-pie h4{
+		font-size: 16px;
+    }
+	/*Scroll arriba*/
+	.scroll{
+		right: 21.5px;
+		font-size: 14px;
+	}
+}
+
+/*Celulares*/
+@media (max-width: 576px){
+	/*relleno de contenidos*/
+	.color_fondo{
+		padding: 20px 2.5%;
+	}
+	/*Color y Fondo del carrusel*/
+	.color_fondo .container.py-5{
+		padding: 22px !important;
+	}
+	/*Carrusel*/
+	.container.py-5 .btn-center .btn.btn-primary{
+		font-size: 14px;
+	}
+	/*Nav-Bar*/
+	.container-fluid #navbarNavDropdown .navbar-nav{
+		font-size: 14px;
+	}
+	.dropdown-menu li .dropdown-item{
+		font-size: 14px;
+	}
+	/*Color del Fondo de la caja de contenidos*/
+	.color_fondo .container_fluid_contenidos{
+		padding: 22px;
+	}
+	/*Summary*/
+	.summary{
+		padding: 18px;
+	}
+	/* 12 cartas */
+	.doce_cartas .icono-casa{
+        font-size: 55px;
+    }
+    .doce_cartas h6{
+        font-size: 13px;
+    }
+	/* Footer */
+    .color_fondo .container-fluid-pie{
+        padding: 16px;
+    }
+	.color_fondo .container-fluid-pie h4{
+		font-size: 14px;
+    }
+	/*Scroll arriba*/
+	.scroll{
+		display: none;
+	}
+}
+
+

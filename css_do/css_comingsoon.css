@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Fondo e imagen */
+.coming-soon-container {
+	position: relative;
+	height: 100vh;
+	background-image: url("../img/Colegio_pbj_6.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+}
+.content {
+	z-index: 2;
+	max-width: 600px;
+	padding: 20px;
+}
+/* Cuenta regresiva */
+.countdown .time-unit {
+	color: #ffffff;
+	font-size: 1.2rem;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.countdown span {
+	font-size: 2.5rem;
+}
+/* Botón principal */
+	.btn-primary {
+	font-size: 1rem;
+	padding: 10px 20px;
+	border-radius: 25px;
+}
+.btn-primary i {
+	margin-right: 5px;
+}
+/* Responsivo */
+@media (max-width: 576px) {
+	.content h1 {
+		font-size: 2rem;
+	}
+	.countdown span {
+		font-size: 1.8rem;
+	}
+	.btn-primary {
+		font-size: 0.9rem;
+	}
+}
+
+

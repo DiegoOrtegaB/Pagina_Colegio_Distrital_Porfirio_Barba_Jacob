@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*Propiedades del fondo*/
+body {
+	background-image: url("../img/Colegio_pbj_3.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+}
+/*relleno de contenidos*/
+.color_fondo{
+	padding: 30px 10%;
+}
+/*Propiedades del titulo*/
+.container h1 {
+	color: #FFFFFF;
+	font-size: 3rem;
+	text-align: center;
+	text-shadow: 0px 0px 15px #1665a7;
+	margin-bottom: 40px;
+	font-family: "Montserrat", serif;
+}
+/* Estilos para la galería */
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+}
+.gallery-item {
+	position: relative;
+	overflow: hidden;
+	transition: transform 0.3s ease;
+}
+.gallery-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+.gallery-item:hover img {
+	transform: scale(1.1);
+}
+/* Efecto modal */
+.modal-img {
+	width: 100%;
+}
+/*Color de fondo del contenedor*/
+.color_fondo .container{
+	border-radius: 25px;
+	padding: 48px 48px;
+	background-color: rgba(13,110,253,0.20);
+	-webkit-box-shadow: 0px 0px 6px 2px #6699ff;
+	box-shadow: 0px 0px 6px 2px #6699ff;
+}
+/* Botón fijo en la esquina superior izquierda */
+.btn-regreso {
+    position: fixed;
+    top: 10%;
+    left: 45px;
+    z-index: 1000;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Hover con animación de salto */
+.btn-regreso:hover {
+    transform: translateY(-5px); /* Salto */
+}
+
+
+
+/* Ajustes para pantallas medianas y pequeñas */
+@media (max-width: 991px) {
+	.btn-regreso {
+		top: 11%;
+		left: 35px;
+	}
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+	.btn-regreso {
+		top: 11%;
+		left: 46.5px;
+	}
+}
+
+/*Celulares*/
+@media (max-width: 576px) {
+    .btn-regreso {
+		top: 11.5%;
+		left: 33px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+}
+
+
